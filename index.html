@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irum Zaidi | Full-Stack Developer</title>
+  <meta name="description" content="Software Engineer specializing in full-stack development, WordPress, and cloud deployment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">IZ</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Work
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Hello, I'm</span>
+        <span class="hero-name">Irum Zaidi</span>
+        <span class="hero-role"><span id="typingText"></span><span class="cursor">|</span></span>
+      </h1>
+      <p class="hero-desc">
+        Software Engineer specializing in full-stack development, WordPress customization,
+        cloud deployment, and building pixel-perfect web experiences using AWS and cPanel.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/irum-zaidi" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn ↗</a>
+        <a href="https://github.com/irum-zaidi" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub ↗</a>
+        <a href="mailto:iruzaidi.9@gmail.com" class="social-pill">Email ↗</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01 — About Me</div>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-layout">
+        <div class="about-text" data-reveal>
+          <p>I'm a <strong>Software Engineer</strong> based in Lahore, Pakistan, with a BS in Software Engineering
+             from Virtual University of Pakistan <span class="highlight">(CGPA: 3.66)</span>.</p>
+          <p>I specialize in building high-quality, pixel-perfect web interfaces, integrating third-party APIs,
+             and deploying scalable solutions on <strong>AWS and cPanel</strong> environments.</p>
+          <p>Currently building medical portals, e-commerce platforms, and corporate websites as a
+             <strong>Full-Stack Developer at Arty Node</strong>, Lahore.</p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <span class="stat-num" data-count="3" data-suffix="+">0+</span>
+              <span class="stat-lbl">Years Experience</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num" data-count="8" data-suffix="+">0+</span>
+              <span class="stat-lbl">WP Themes Built</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num" data-count="5" data-suffix="+">0+</span>
+              <span class="stat-lbl">Live Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num" data-count="3.66" data-suffix="" data-decimal="2">0</span>
+              <span class="stat-lbl">CGPA</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" data-reveal>
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span class="code-filename">about_irum.js</span>
+            </div>
+            <pre class="code-body"><span class="c-comment">// Software Engineer · Lahore, PK</span>
+<span class="c-kw">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>:     <span class="c-str">"Irum Zaidi"</span>,
+  <span class="c-prop">role</span>:     <span class="c-str">"Full-Stack Developer"</span>,
+  <span class="c-prop">cgpa</span>:     <span class="c-num">3.66</span>,
+  <span class="c-prop">stack</span>: [
+    <span class="c-str">"PHP"</span>, <span class="c-str">"JavaScript"</span>,
+    <span class="c-str">"WordPress"</span>, <span class="c-str">"MySQL"</span>,
+    <span class="c-str">"AWS"</span>, <span class="c-str">"Laravel"</span>
+  ],
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>
+};</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">02 — Experience</div>
+      <h2 class="section-title">Work History</h2>
+      <div class="timeline">
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2024 — Present</div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Full-Stack Developer</h3>
+              <span class="tl-company">Arty Node, Lahore</span>
+              <span class="tl-badge current">Current</span>
+            </div>
+            <ul class="tl-list">
+              <li>Developed the <em>Consult</em> Medical Portal using Core PHP for secure pathology and radiology referrals</li>
+              <li>Integrated AWS SES, Twilio APIs, and managed deployments on AWS EC2 and cPanel servers</li>
+              <li>Built and maintained e-commerce and corporate websites with secure payment integration, responsive design, and SEO optimization</li>
+            </ul>
+            <div class="tl-tags">
+              <span>PHP</span><span>AWS SES</span><span>Twilio API</span><span>AWS EC2</span><span>MySQL</span><span>cPanel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"></div>
+          <div class="tl-date">Dec 2023 — Apr 2024</div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>WordPress Developer</h3>
+              <span class="tl-company">Topnotch Innovative Technologies, Lahore</span>
+            </div>
+            <ul class="tl-list">
+              <li>Customized and deployed 8+ premium WordPress themes using Elementor for the WPXpro marketplace</li>
+              <li>Developed responsive frontend layouts using HTML, CSS, Bootstrap, and JavaScript</li>
+              <li>Optimized website performance, PageSpeed scores, and resolved UI inconsistencies pre-launch</li>
+            </ul>
+            <div class="tl-tags">
+              <span>WordPress</span><span>Elementor Pro</span><span>Bootstrap</span><span>JavaScript</span><span>SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"></div>
+          <div class="tl-date">Jun 2023 — Dec 2023</div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>SQA Engineer</h3>
+              <span class="tl-company">Aan Tourism, Lahore</span>
+            </div>
+            <ul class="tl-list">
+              <li>Performed manual testing and system analysis to identify UI/UX and cross-browser issues</li>
+              <li>Developed and fixed frontend components using HTML, CSS, Bootstrap, and JavaScript</li>
+              <li>Collaborated with developers to improve responsiveness and reduce post-launch defects</li>
+            </ul>
+            <div class="tl-tags">
+              <span>SQA</span><span>Manual Testing</span><span>HTML/CSS</span><span>Bootstrap</span><span>Postman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item" data-reveal>
+          <div class="tl-dot"></div>
+          <div class="tl-date">Feb 2023 — Apr 2023</div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <h3>Data Entry Specialist</h3>
+              <span class="tl-company">Orient Biz Tech, Lahore</span>
+            </div>
+            <ul class="tl-list">
+              <li>Managed product data entry and website publishing with high accuracy and attention to detail</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Data Entry</span><span>Web Publishing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">03 — Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Tailwind CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend & Database</h3>
+          <div class="skill-tags">
+            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">🌐</div>
+          <h3>CMS</h3>
+          <div class="skill-tags">
+            <span>WordPress</span><span>Elementor Pro</span><span>WPXpro</span><span>Beaver</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & Servers</h3>
+          <div class="skill-tags">
+            <span>AWS SES</span><span>AWS EC2</span><span>cPanel</span><span>Web Hosting</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">🔌</div>
+          <h3>API Integrations</h3>
+          <div class="skill-tags">
+            <span>Twilio API</span><span>Payment Gateways</span><span>Postman</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">🤖</div>
+          <h3>AI & Prompt Engineering</h3>
+          <div class="skill-tags">
+            <span>ChatGPT</span><span>Claude</span><span>GitHub Copilot</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">🧪</div>
+          <h3>Testing & Analysis</h3>
+          <div class="skill-tags">
+            <span>System Analysis</span><span>Manual SQA</span><span>Cross-browser Testing</span>
+          </div>
+        </div>
+        <div class="skill-card" data-reveal>
+          <div class="skill-icon">🎨</div>
+          <h3>Design & Productivity</h3>
+          <div class="skill-tags">
+            <span>Canva Pro</span><span>MS Office</span><span>Google Workspace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">04 — Projects</div>
+      <h2 class="section-title">Live Websites</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-reveal>
+          <div class="project-type">Medical Portal</div>
+          <h3>Doctor Help — EMR & Patient Portal</h3>
+          <p>A comprehensive medical portal for secure pathology and radiology referrals, built with Core PHP and deployed on AWS EC2. Integrated with AWS SES for email notifications and Twilio for SMS alerts.</p>
+          <div class="project-stack">
+            <span>Core PHP</span><span>MySQL</span><span>AWS EC2</span><span>AWS SES</span><span>Twilio</span><span>cPanel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://consult.doctorhelp.com.au/" target="_blank" rel="noopener noreferrer" class="project-link">consult.doctorhelp.com.au ↗</a>
+            <a href="https://www.doctorhelp.com.au" target="_blank" rel="noopener noreferrer" class="project-link">doctorhelp.com.au ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-type">Corporate</div>
+          <h3>Haris CPA</h3>
+          <p>Corporate finance website with professional design, fully responsive layout, and SEO optimization for a certified public accounting firm.</p>
+          <div class="project-stack">
+            <span>WordPress</span><span>Elementor</span><span>SEO</span>
+          </div>
+          <div class="project-links">
+            <a href="https://hariscpa.com" target="_blank" rel="noopener noreferrer" class="project-link">hariscpa.com ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-type">E-Commerce</div>
+          <h3>Lahore Carpet</h3>
+          <p>Full-featured e-commerce platform for carpet retail with product management, secure payment gateway, and responsive shopping experience.</p>
+          <div class="project-stack">
+            <span>WordPress</span><span>WooCommerce</span><span>Payment Gateway</span>
+          </div>
+          <div class="project-links">
+            <a href="https://lahorecarpet.pk" target="_blank" rel="noopener noreferrer" class="project-link">lahorecarpet.pk ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-type">WPXpro Theme</div>
+          <h3>Bean Harbor</h3>
+          <p>Premium marketplace theme for a coffee e-commerce brand, featuring modern UI, optimized performance, and pixel-perfect Elementor layout.</p>
+          <div class="project-stack">
+            <span>WordPress</span><span>Elementor</span><span>WPXpro</span>
+          </div>
+          <div class="project-links">
+            <a href="https://themes.wpxpro.com/beanharbor/" target="_blank" rel="noopener noreferrer" class="project-link">themes.wpxpro.com/beanharbor ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card" data-reveal>
+          <div class="project-type">WPXpro Theme</div>
+          <h3>Petty</h3>
+          <p>Premium pet store e-commerce theme for the WPXpro marketplace with polished UI/UX, responsive grids, and optimized PageSpeed scores.</p>
+          <div class="project-stack">
+            <span>WordPress</span><span>Elementor</span><span>WPXpro</span>
+          </div>
+          <div class="project-links">
+            <a href="https://themes.wpxpro.com/petty/" target="_blank" rel="noopener noreferrer" class="project-link">themes.wpxpro.com/petty ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card fyp" data-reveal>
+          <div class="project-type">Final Year Project</div>
+          <h3>Web-Based Online Voting System</h3>
+          <p>Secure, web-based voting platform with user authentication, admin panel, vote casting, and result reporting. Built as capstone project.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>HTML/CSS</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">05 — Education & Achievements</div>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="edu-layout">
+
+        <div class="edu-card" data-reveal>
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3>BS Software Engineering</h3>
+            <p class="edu-school">Virtual University of Pakistan, Lahore</p>
+            <p class="edu-period">October 2019 – October 2023</p>
+            <div class="edu-cgpa">
+              <span class="cgpa-tag">CGPA</span>
+              <span class="cgpa-val">3.66 / 4.0</span>
+            </div>
+            <div class="merit-badge">🏆 Merit Scholarship Recipient</div>
+          </div>
+        </div>
+
+        <div class="achieve-card" data-reveal>
+          <h3>Achievements & Certificates</h3>
+          <ul class="achieve-list">
+            <li><span class="ai">🏆</span><span>Merit Scholarship — Virtual University of Pakistan</span></li>
+            <li><span class="ai">🥇</span><span>Position Holder — Global System for Educational Assessment</span></li>
+            <li><span class="ai">🤖</span><span>AI for IT & Non-IT Professionals — Participation Certificate</span></li>
+            <li><span class="ai">🎨</span><span>Graphic Design — DigiSkills</span></li>
+            <li><span class="ai">🌐</span><span>WordPress — DigiSkills</span></li>
+            <li><span class="ai">🖼️</span><span>Art & Science Exhibition — Participation Certificate</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Languages -->
+      <div class="languages" data-reveal>
+        <h3>Languages</h3>
+        <div class="lang-list">
+          <div class="lang-item">
+            <span class="lang-flag">🇬🇧</span>
+            <div>
+              <span class="lang-name">English</span>
+              <span class="lang-level">Proficient</span>
+            </div>
+          </div>
+          <div class="lang-item">
+            <span class="lang-flag">🇵🇰</span>
+            <div>
+              <span class="lang-name">Urdu</span>
+              <span class="lang-level">Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-intro">
+        I'm open to new opportunities. Whether you have a project in mind or just want to connect,
+        feel free to reach out — I'll get back to you promptly.
+      </p>
+      <div class="contact-grid" data-reveal>
+        <a href="mailto:iruzaidi.9@gmail.com" class="contact-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <span class="contact-lbl">Email</span>
+            <span class="contact-val">iruzaidi.9@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+923274511518" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div>
+            <span class="contact-lbl">Phone</span>
+            <span class="contact-val">+92 327 4511518</span>
+          </div>
+        </a>
+        <div class="contact-card no-link">
+          <div class="contact-icon">📍</div>
+          <div>
+            <span class="contact-lbl">Location</span>
+            <span class="contact-val">Green Town, Lahore, Pakistan</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-socials" data-reveal>
+        <a href="https://www.linkedin.com/in/irum-zaidi" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">LinkedIn ↗</a>
+        <a href="https://github.com/irum-zaidi" target="_blank" rel="noopener noreferrer" class="social-btn github">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-logo">IZ</span>
+      <p>Designed & built by <strong>Irum Zaidi</strong> · Lahore, Pakistan · 2024</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/irum-zaidi" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/irum-zaidi" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
