@@ -380,7 +380,7 @@ section { padding: 110px 0; }
 }
 .scroll-hint {
   position: absolute;
-  bottom: 2rem; left: 50%;
+  bottom: 0rem; left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   animation: fadeUp 1s var(--ease) 1s both;
