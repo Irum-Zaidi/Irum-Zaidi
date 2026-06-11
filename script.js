@@ -217,3 +217,14 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 })();
+
+/* ============================================================
+   CURRENT YEAR
+   ============================================================ */
+(function () {
+  const yearEl = document.getElementById('currentYear');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+})();
+
