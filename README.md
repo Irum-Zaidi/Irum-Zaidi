@@ -4,7 +4,7 @@ A modern, glassmorphism-themed personal portfolio website built with pure HTML, 
 
 ## Live Demo
 
-> Deploy to GitHub Pages and add your URL here.
+https://irum-zaidi.github.io/Irum-Zaidi/
 
 ---
 
